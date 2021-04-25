@@ -1,18 +1,18 @@
-import Component from '../../node_modules/neo.mjs/src/controller/Component.mjs';
+import Component from '../../../node_modules/neo.mjs/src/controller/Component.mjs';
 
 /**
- * @class MyApp.MainContainerController
+ * @class MyApp.view.MainContainerController
  * @extends Neo.controller.Component
  */
 class MainContainerController extends Component {
     /**
-     * @member {MyApp.EditUserDialog|null} dialog=null
+     * @member {MyApp.view.EditUserDialog|null} dialog=null
      */
     dialog = null
 
     static getConfig() {return {
         /**
-         * @member {String} className='MyApp.MainContainerController'
+         * @member {String} className='MyApp.view.MainContainerController'
          * @protected
          */
         className: 'MyApp.MainContainerController'
@@ -26,10 +26,7 @@ class MainContainerController extends Component {
         let me = this;
 
         if (!me.dialog) {
-            import(
-                /* webpackChunkName: 'examples/model/dialog/EditUserDialog' */
-                './EditUserDialog.mjs'
-            ).then(module => {
+            import('./EditUserDialog.mjs').then(module => {
                 me.dialog = Neo.create({
                     module         : module.default,
                     animateTargetId: me.getReference('edit-user-button').id,

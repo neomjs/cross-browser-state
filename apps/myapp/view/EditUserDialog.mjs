@@ -1,18 +1,18 @@
-import Dialog                   from '../../node_modules/neo.mjs/src/dialog/Base.mjs';
+import Dialog                   from '../../../node_modules/neo.mjs/src/dialog/Base.mjs';
 import EditUserDialogController from './EditUserDialogController.mjs';
-import TextField                from '../../node_modules/neo.mjs/src/form/field/Text.mjs';
+import TextField                from '../../../node_modules/neo.mjs/src/form/field/Text.mjs';
 
 /**
- * @class MyApp.EditUserDialog
+ * @class MyApp.view.EditUserDialog
  * @extends Neo.dialog.Base
  */
 class EditUserDialog extends Dialog {
     static getConfig() {return {
         /**
-         * @member {String} className='MyApp.EditUserDialog'
+         * @member {String} className='MyApp.view.EditUserDialog'
          * @protected
          */
-        className: 'MyApp.EditUserDialog',
+        className: 'MyApp.view.EditUserDialog',
         /**
          * @member {Object} containerConfig={style:{padding:'1em'}}
          */

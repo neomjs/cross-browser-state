@@ -1,9 +1,9 @@
-import ComponentController from '../../node_modules/neo.mjs/src/controller/Component.mjs';
-import ComponentModel      from '../../node_modules/neo.mjs/src/model/Component.mjs';
-import NeoArray            from '../../node_modules/neo.mjs/src/util/Array.mjs';
+import ComponentController from '../../../node_modules/neo.mjs/src/controller/Component.mjs';
+import ComponentModel      from '../../../node_modules/neo.mjs/src/model/Component.mjs';
+import NeoArray            from '../../../node_modules/neo.mjs/src/util/Array.mjs';
 
 /**
- * @class MyApp.ViewportController
+ * @class MyApp.view.ViewportController
  * @extends Neo.controller.Component
  */
 class MainContainerController extends ComponentController {
@@ -18,10 +18,10 @@ class MainContainerController extends ComponentController {
 
     static getConfig() {return {
         /**
-         * @member {String} className='MyApp.ViewportController'
+         * @member {String} className='MyApp.view.ViewportController'
          * @protected
          */
-        className: 'MyApp.ViewportController',
+        className: 'MyApp.view.ViewportController',
     }}
 
     /**
@@ -68,7 +68,7 @@ class MainContainerController extends ComponentController {
             };
         }
 
-        import('../myapp/MainContainer.mjs').then(module => {
+        import('../../myapp/view/MainContainer.mjs').then(module => {
             view = Neo.apps[name].mainView.add({
                 module: module.default,
                 model : model

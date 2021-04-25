@@ -1,16 +1,16 @@
-import Component from '../../node_modules/neo.mjs/src/controller/Component.mjs';
+import Component from '../../../node_modules/neo.mjs/src/controller/Component.mjs';
 
 /**
- * @class MyApp.EditUserDialogController
+ * @class MyApp.view.EditUserDialogController
  * @extends Neo.controller.Component
  */
 class EditUserDialogController extends Component {
     static getConfig() {return {
         /**
-         * @member {String} className='MyApp.EditUserDialogController'
+         * @member {String} className='MyApp.view.EditUserDialogController'
          * @protected
          */
-        className: 'MyApp.EditUserDialogController'
+        className: 'MyApp.view.EditUserDialogController'
     }}
 
     /**

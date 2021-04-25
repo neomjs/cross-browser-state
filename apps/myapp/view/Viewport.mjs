@@ -1,17 +1,17 @@
-import BaseViewport       from '../../node_modules/neo.mjs/src/container/Viewport.mjs';
+import BaseViewport       from '../../../node_modules/neo.mjs/src/container/Viewport.mjs';
 import ViewportController from './ViewportController.mjs'
 
 /**
- * @class MyApp.Viewport
+ * @class MyApp.view.Viewport
  * @extends Neo.container.Viewport
  */
 class Viewport extends BaseViewport {
     static getConfig() {return {
         /**
-         * @member {String} className='MyApp.Viewport'
+         * @member {String} className='MyApp.view.Viewport'
          * @protected
          */
-        className: 'MyApp.Viewport',
+        className: 'MyApp.view.Viewport',
         /**
          * @member {Neo.controller.Component} controller=ViewportController
          */

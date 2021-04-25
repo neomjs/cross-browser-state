@@ -1,17 +1,17 @@
 import MainContainerController from './MainContainerController.mjs'
-import Panel                   from '../../node_modules/neo.mjs/src/container/Panel.mjs';
+import Panel                   from '../../../node_modules/neo.mjs/src/container/Panel.mjs';
 
 /**
- * @class MyApp.MainContainer
+ * @class MyApp.view.MainContainer
  * @extends Neo.container.Panel
  */
 class MainContainer extends Panel {
     static getConfig() {return {
         /**
-         * @member {String} className='MyApp.MainContainer'
+         * @member {String} className='MyApp.view.MainContainer'
          * @protected
          */
-        className: 'MyApp.MainContainer',
+        className: 'MyApp.view.MainContainer',
         /**
          * @member {Object} containerConfig
          */

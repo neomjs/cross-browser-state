@@ -1,4 +1,4 @@
-import Viewport from './Viewport.mjs';
+import Viewport from './view/Viewport.mjs';
 
 const onStart = () => Neo.app({
     appPath : 'apps/myapp/',
