@@ -1,7 +1,10 @@
 {
-    "name": "myapp",
-    "version": "0.1.0",
-    "private": true,
+    "name": "cross-browser-state",
+    "version": "1.0.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/neomjs/cross-browser-state.git"
+    },
     "scripts": {
         "build-all": "node ./node_modules/neo.mjs/buildScripts/buildAll.js -n",
         "build-all-questions": "node ./buildScripts/buildAll.js",
@@ -13,7 +16,26 @@
         "server-start": "webpack serve -c ./node_modules/neo.mjs/buildScripts/webpack/webpack.server.config.js --open",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
+    "keywords": [
+        "javascript",
+        "frontend",
+        "framework",
+        "webworker",
+        "ecmascript",
+        "css",
+        "json"
+    ],
+    "author": "Tobias Uhlig",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/neomjs/cross-browser-state/issues"
+    },
+    "homepage": "https://neomjs.github.io/pages/",
     "dependencies": {
         "neo.mjs": "^2.0.8"
+    },
+    "funding": {
+        "type": "GitHub Sponsors",
+        "url": "https://github.com/sponsors/tobiu"
     }
 }
