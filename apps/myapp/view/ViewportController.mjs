@@ -21,7 +21,7 @@ class MainContainerController extends ComponentController {
          * @member {String} className='MyApp.view.ViewportController'
          * @protected
          */
-        className: 'MyApp.view.ViewportController',
+        className: 'MyApp.view.ViewportController'
     }}
 
     /**
