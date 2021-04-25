@@ -30,6 +30,13 @@
             "mainThreadAddons": "'DragDrop', 'Stylesheet'",
             "themes": "'neo-theme-dark'",
             "useSharedWorkers": true
+        },
+        "MyApp2": {
+            "input": "./apps/myapp2/app.mjs",
+            "output": "/apps/myapp2/",
+            "title": "MyApp2",
+            "themes": "'neo-theme-dark'",
+            "useSharedWorkers": true
         }
     }
 }
