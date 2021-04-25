@@ -1,7 +1,7 @@
-import MainContainer from './MainContainer.mjs';
+import Viewport from './view/Viewport.mjs';
 
 const onStart = () => Neo.app({
-    mainView: MainContainer,
+    mainView: Viewport,
     name    : 'MyApp2'
 });
 
