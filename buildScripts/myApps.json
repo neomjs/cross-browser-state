@@ -1,0 +1,35 @@
+{
+    "bodyTag": "<body>",
+    "mainInput": "./src/Main.mjs",
+    "mainOutput": "main.js",
+    "workers": {
+        "app": {
+            "input": "./src/worker/App.mjs",
+            "output": "appworker.js"
+        },
+        "data": {
+            "input": "./src/worker/Data.mjs",
+            "output": "dataworker.js"
+        },
+        "vdom": {
+            "input": "./src/worker/VDom.mjs",
+            "output": "vdomworker.js"
+        }
+    },
+    "apps": {
+        "Docs": {
+            "input": "./docs/app.mjs",
+            "mainThreadAddons": "'DragDrop', 'HighlightJS', 'Stylesheet'",
+            "output": "/docs/",
+            "title": "Neo Docs"
+        },
+        "MyApp": {
+            "input": "./apps/myapp/app.mjs",
+            "output": "/apps/myapp/",
+            "title": "MyApp",
+            "mainThreadAddons": "'DragDrop', 'Stylesheet'",
+            "themes": "'neo-theme-dark'",
+            "useSharedWorkers": true
+        }
+    }
+}
