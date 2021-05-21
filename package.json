@@ -1,6 +1,6 @@
 {
     "name": "cross-browser-state",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "repository": {
         "type": "git",
         "url": "https://github.com/neomjs/cross-browser-state.git"
@@ -32,7 +32,7 @@
     },
     "homepage": "https://neomjs.github.io/pages/",
     "dependencies": {
-        "neo.mjs": "^2.0.8"
+        "neo.mjs": "^2.1.5"
     },
     "funding": {
         "type": "GitHub Sponsors",
